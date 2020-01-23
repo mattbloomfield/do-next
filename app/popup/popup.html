@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="popup.css" />
+</head>
+
+<body style="background: #333">
+
+	<h1>What
+		<span id="Limit"></span>
+		things do you really need to do?</h1>
+	<form id="AddNewForm">
+		<input type="text" placeholder="Add new task..." id="NewTask" autocomplete="off" />
+		<button type="submit" id="AddNewButton" class="btn btn-submit">Add</button>
+	</form>
+	<ul id="List"></ul>
+
+	<form id="NewDayForm">
+
+		<button type="submit" id="NewDayButton" class="btn btn-submit">Start a New Day</button>
+		<label>
+			<input type="checkbox" name="rollover" id="RolloverTasks" />
+			<span>Rollover Incomplete Tasks</span>
+		</label>
+	</form>
+	<hr id="ListDivider" style="display:none; margin: 24px;" />
+	<ul id="CompletedList"></ul>
+	<button class="btn" id="ClearHistoryButton" style="float: left">Clear History</button>
+	<button class="btn" id="ShowCompletedButton" style="float: right; margin-bottom: 12px;">Show Completed
+		Tasks</button>
+
+	<script src="../resources/sortable.js" crossorigin="anonymous"></script>
+	<script src="popup.js"></script>
+
+</body>
+
+</html>

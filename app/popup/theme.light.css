@@ -1,0 +1,54 @@
+body {
+    background: #eaeaea;
+}
+
+input[type="text"] {
+
+    background: #fff;
+    color: #333;
+}
+
+.btn {
+    color: #333;
+}
+
+.btn-submit {
+    background: #00c9b8;
+    color: #fff;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, .15);
+}
+
+.btn-submit:hover {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .15);
+}
+
+/** NEW CSS **/
+
+li.task {
+    background: #fff;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .2);
+}
+
+li.task.completed {
+    color: #ddd;
+}
+
+ul#CompletedList li.task.completed {
+    color: #7dbae5;
+}
+
+li.task .buttons .btn {
+    color: #ddd;
+}
+
+li.task .buttons .btn-primary:hover {
+    color: #00c9b8;
+}
+
+li.task .buttons .btn-danger:hover {
+    color: #df5f6a;
+}
+
+li.task .buttons .btn-edit:hover {
+    color: #5aa7de;
+}

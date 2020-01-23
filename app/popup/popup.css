@@ -1,0 +1,88 @@
+body {
+    padding: 1em;
+    min-width: 450px;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    padding: 8px 12px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    margin: 4px auto;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    transition: .2s all;
+}
+
+/** NEW CSS **/
+
+#AddNewForm {
+    display: flex;
+}
+
+#NewTask {
+    margin: 0 auto;
+    border-radius: 4px 0 0 4px;
+}
+
+#AddNewButton {
+    border-radius: 0 4px 4px 0;
+}
+
+ul {
+    padding: 0 0 0 0;
+    margin: 1em auto 2em;
+}
+
+li.task {
+    display: block;
+    padding: 1em;
+    margin: 4px auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+li.task span {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+li.task.completed span {
+    text-decoration: line-through;
+}
+
+ul#CompletedList li.task.completed span {
+    text-decoration: none;
+}
+
+li.task .buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 4px;
+}
+
+li.task .buttons .btn {
+    cursor: pointer;
+    transition: .2s all;
+}

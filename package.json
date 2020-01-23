@@ -1,0 +1,23 @@
+{
+  "name": "cision-helper-extension",
+  "version": "1.0.0",
+  "description": "This chrome extension allows users to easily build Press Release and Media Advisories within the browser using a web form.",
+  "main": "background.js",
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USChamber/cision-template-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/USChamber/cision-template-extension/issues"
+  },
+  "homepage": "https://github.com/USChamber/cision-template-extension#readme",
+  "devDependencies": {
+    "chrome-webstore-upload": "^0.2.2",
+    "zip-folder": "^1.0.0"
+  }
+}
